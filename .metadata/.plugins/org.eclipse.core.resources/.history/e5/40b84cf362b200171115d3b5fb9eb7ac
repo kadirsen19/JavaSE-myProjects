@@ -1,0 +1,34 @@
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Test {
+
+	public static void main(String[] args) throws IOException {
+	
+	File directory = new File ("mydir");	
+	
+	directory.mkdirs();
+	
+	
+	File file = new File(directory,"mydir");
+	file.createNewFile();
+	
+	
+	if(file.isFile()) 
+	{
+
+		PrintWriter pw = new PrintWriter("mydir.txt");
+
+		
+		pw.println("directory :deneme 1");
+		pw.println("directory :deneme 2");
+		pw.println("directory :deneme 3");
+		
+		pw.close();
+	}	
+	
+
+	}
+
+}

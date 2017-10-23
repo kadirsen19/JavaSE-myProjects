@@ -1,0 +1,62 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class MetinDosyasiOkuma {
+
+	private Scanner scan;
+	private Personel personelOku;
+	public void dosyaAc() {
+		try 
+		{
+			scan= new Scanner(new File("E:/personel.txt"));
+		} 
+		catch (FileNotFoundException e) 
+		{
+			System.out.println("Dosya bulunamadý !");
+			e.printStackTrace();
+		}
+	}
+	
+	public void dosyaOku() {
+		
+		 personelOku= new Personel();
+		
+		try {
+		
+			while(scan.hasNext())
+			{
+				personelOku.setPersonelId(scan.nextInt());
+				personelOku.setPersonelAdi(scan.next());
+				personelOku.setPersonelYasi(scan.nextInt());
+				personelOku.setPersonelDepartman(scan.next());
+					
+			}
+			
+			
+		} catch (Exception e) {
+			
+			e.toString();
+			System.out.println("Dosya okunurken bir hata oluþtu :"+e.getMessage());
+			
+		}
+		
+	}
+	@Override
+	public String toString() {
+		
+		return 	"Personelin Adý :"+personelOku.getPersonelAdi()
+				+"Personelin Soyadý :"+personelOku.getPersonelSoyadi()
+				+"Perosnelin Yaþý :"+personelOku.getPersonelYasi()
+				+"Peronelin Departmaný :"+personelOku.getPersonelDepartman();
+	}
+
+	public void dosyaKapat() {
+		
+		if(scan != null)
+		{
+			scan.close();
+		}
+	}
+	
+}

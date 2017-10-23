@@ -1,0 +1,12 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Kare k1 = new Kare(7);
+		Kare k2= new Kare(3);
+		
+		System.out.println("Alanlar :"+k1.karsilastir(k2));
+	}
+
+}

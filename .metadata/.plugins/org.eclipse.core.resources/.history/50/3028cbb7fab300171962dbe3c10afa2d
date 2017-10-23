@@ -1,0 +1,16 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Kare k1 = new Kare(7);
+		Kare k2= new Kare(3);
+		
+		System.out.println("Alanlar :"+k1.karsilastir(k2));
+		
+		Personel p1= new Personel(25);
+		Personel p2= new Personel(22);
+		System.out.println("Yaþlar :"+p1.karsilastir(p2));
+	}
+
+}

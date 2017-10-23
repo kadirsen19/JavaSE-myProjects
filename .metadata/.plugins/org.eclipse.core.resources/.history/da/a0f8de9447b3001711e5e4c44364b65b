@@ -1,0 +1,11 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Islemler islemler = new Islemler("E:/FileExample/Yeni klasör");
+		
+		islemler.dosyaKlasorIslemleri();
+	}
+
+}

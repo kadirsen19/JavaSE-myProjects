@@ -1,0 +1,9 @@
+
+public class StudentProses {
+
+	public void addStudent(Student student) 
+	{
+	
+		
+	}
+}

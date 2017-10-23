@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Test {
+	
+	public static MetinDosyaIslemleri mdi= new MetinDosyaIslemleri();
+	public static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+		
+			dosyaAc();
+			dosyaYaz();
+			dosyaKapat();
+			
+
+	}
+	public static void dosyaAc()
+	{
+		mdi.dosyaAc();
+	}
+	public static void dosyaYaz()
+	{
+		System.out.println("Personel ID giriniz :");
+		int personelId = scan.nextInt();
+		
+		System.out.println("Personel adýný giriniz :");
+		String personelAdi = scan.next();
+		
+		System.out.println("Personel soyadýný giriniz :");
+		String personelSoyadi = scan.next();
+		
+		System.out.println("Personel yaþi giriniz :");
+		int personelYasi = scan.nextInt();
+		
+		System.out.println("Personel departmaný giriniz :");
+		String personelDepartman = scan.next();
+		
+		mdi.setPersonelAdi(personelAdi);
+		mdi.setPersonelId(personelId);
+		mdi.setPersonelSoyadi(personelSoyadi);
+		mdi.setPersonelYasi(personelYasi);
+		mdi.setPersonelDepartman(personelDepartman);
+		mdi.dosyaKapat();
+	}
+	public static void dosyaKapat() 
+	{
+		
+	}
+
+}

@@ -1,0 +1,63 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class SerializableYazma implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4133129227929663361L;
+	private ObjectOutputStream write;
+	
+	public void dosyaAc()
+	{
+		try {
+			FileOutputStream fileOut = new FileOutputStream("E:/personelSirializable.txt");
+			write=new ObjectOutputStream(fileOut);
+
+		} 
+		
+		catch (FileNotFoundException e) {
+			e.toString();
+			e.printStackTrace();
+		}
+		catch(Exception e){
+			e.toString();
+		}
+		
+	}
+	public void dosyayaYaz()
+	{
+		
+		PersonelIslemleri personel1= new PersonelIslemleri(1,"Kadir","ÞEN",25);
+		PersonelIslemleri personel2= new PersonelIslemleri(2,"Ahmet","ÞEN",22);
+		PersonelIslemleri personel3= new PersonelIslemleri(3,"Kadir","ÞEN",23);
+		
+		try {
+			
+			write.writeObject(personel1);
+			write.writeObject(personel2);
+			write.writeObject(personel3);
+			
+		} catch (Exception e) {
+			System.out.println("Hata-->"+e.toString());
+		}
+		
+	}
+	public void dosyaKapat()
+	{
+		if(write != null)
+		{
+			try {
+				write.close();
+			} catch (IOException e) {
+				System.out.println("Dosya kapatma Hatasý :"+e.toString());
+				e.printStackTrace();
+			}
+		}
+	}
+	
+}

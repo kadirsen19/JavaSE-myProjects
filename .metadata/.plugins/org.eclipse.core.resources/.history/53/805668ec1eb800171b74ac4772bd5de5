@@ -1,0 +1,5 @@
+package com.kadir.person;
+
+public abstract class Person {
+
+}

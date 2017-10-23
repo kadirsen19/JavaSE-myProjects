@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Test {
+	
+	Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+		
+		MetinDosyaIslemleri.dosyaAc();
+		MetinDosyaIslemleri.dosyayaYaz();
+		MetinDosyaIslemleri.dosyaKapat();
+
+	}
+	public static void Yaz()
+	{
+		
+	}
+
+}

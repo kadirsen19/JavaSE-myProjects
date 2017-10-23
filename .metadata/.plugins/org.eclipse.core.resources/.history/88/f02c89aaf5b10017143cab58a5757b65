@@ -1,0 +1,32 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public abstract class Test {
+
+	public static void main(String[] args) throws IOException{
+		
+		FileOutputStream fos = new FileOutputStream("test.txt");
+		
+		byte[]byteArray="sen kadir".getBytes();
+		
+		fos.write(byteArray);
+		fos.close();
+		
+		FileInputStream fýs = new FileInputStream("test.txt");
+	
+		int i;
+		int available;
+		while((i=fýs.available())!=-1)
+		{
+			available =fýs.available();
+			char c =(char)i;
+			
+			System.out.println(i);
+		}
+		
+		fýs.close();
+
+	}
+	
+}

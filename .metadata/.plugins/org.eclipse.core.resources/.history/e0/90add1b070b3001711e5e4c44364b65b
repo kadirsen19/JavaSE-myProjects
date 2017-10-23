@@ -1,0 +1,13 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		SerializableYazma yaz = new SerializableYazma();
+		yaz.dosyaAc();
+		yaz.dosyayaYaz();
+		yaz.dosyaKapat();
+
+	}
+
+}

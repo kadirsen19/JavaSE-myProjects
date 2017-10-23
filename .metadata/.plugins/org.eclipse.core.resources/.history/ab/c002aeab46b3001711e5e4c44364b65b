@@ -1,0 +1,29 @@
+import java.io.File;
+
+public class Islemler {
+
+	private String konum;
+
+	
+	
+	public Islemler(String konum) {
+	
+		this.konum = konum;
+	}
+
+	public String getKonum() {
+		return konum;
+	}
+
+	public void setKonum(String konum) {
+		this.konum = konum;
+	}
+	public void dosyaKlasorIslemleri() {
+		File dosyaKlasor= new File(konum);
+		if(dosyaKlasor.exists())
+		{
+			System.out.println(dosyaKlasor.getName());
+		}
+		
+	}
+}

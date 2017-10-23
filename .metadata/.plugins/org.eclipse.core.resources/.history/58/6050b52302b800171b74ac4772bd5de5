@@ -1,0 +1,20 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+	
+		
+		Student student = new Student();
+		
+		student.setStudentName("Kadir");
+		student.setStudentSurname("ŞEN");
+		student.setStudentNo(1801);
+		student.getLessons().add("Fizik");
+		student.getLessons().add("Matematik");
+		student.getLessons().add("Kimya");
+		
+		
+		
+	}
+
+}

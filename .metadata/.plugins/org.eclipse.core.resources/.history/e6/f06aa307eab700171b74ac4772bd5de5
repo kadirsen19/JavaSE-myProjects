@@ -1,0 +1,18 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Catogory catagory1 = new Catogory("10","Beyaz Eþya");
+		
+		Product product1 = new Product(123,"Buzdolabý",900);
+		
+		product1.setCatagory(catagory1);
+		
+		product1.getCatagory().addCatogory(product1);
+	
+		catagory1.showProductList();
+		
+	}
+
+}

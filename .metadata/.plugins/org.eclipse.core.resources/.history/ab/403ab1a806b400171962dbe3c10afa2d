@@ -1,0 +1,19 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Main");
+		String [] array= {"kadir","can","ahmet"};
+		Test.Inner1 inner1= new Test().new Inner1();
+		inner1.StringDiziYaz(array);
+		
+	}
+	public class Inner1{
+		private void StringDiziYaz(String[] dizi) {
+			for (String elemnet : dizi) {
+				System.out.println("Dizi :"+dizi);
+			}
+		}
+	}
+}

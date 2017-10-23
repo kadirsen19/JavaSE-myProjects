@@ -1,0 +1,38 @@
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class MetinDosyaIslemleri {
+
+	private static PrintWriter yazici;
+	
+	
+
+	public static void dosyaAc() {
+		
+		try {
+			yazici= new PrintWriter("E:/personel.txt");
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+		
+	}
+	public static void dosyayaYaz()
+	{
+		Personel personel1 = new Personel("Ahmet ","Altun",0,25,"Engineer");
+		yazici.println(personel1.getPersonelAdi());
+		yazici.println(personel1.getPersonelSoyadi());
+		yazici.println(personel1.getPersonelYasi());
+		yazici.println(personel1.getPersonelId());
+		yazici.print(personel1.getPersonelDepartman());
+	}
+	
+	public static void dosyaKapat()
+	{
+		if(yazici != null)
+		{
+			yazici.close();
+		}
+		
+	}
+}

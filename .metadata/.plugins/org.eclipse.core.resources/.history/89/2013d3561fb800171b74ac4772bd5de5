@@ -1,0 +1,7 @@
+package com.kadir.inheritance;
+
+import com.kadir.person.Person;
+
+public class Supplier extends Person {
+
+}

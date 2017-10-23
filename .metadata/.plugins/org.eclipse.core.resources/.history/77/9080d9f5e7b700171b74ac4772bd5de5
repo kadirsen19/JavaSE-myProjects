@@ -1,0 +1,48 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Catogory {
+
+	private String catogoryId;
+	private String catagoryName;
+	
+	private List<Product> listProduct= new ArrayList<Product>();
+	
+	public boolean addCatogory(List<Product> ctgr1 ) {
+		
+		
+		return true;
+	}
+	
+	public List<Product> getListProduct() {
+		return listProduct;
+	}
+
+	public void setListProduct(List<Product> listProduct) {
+		this.listProduct = listProduct;
+	}
+
+	public Catogory(String catogoryId, String catagoryName) {
+	
+		this.catogoryId = catogoryId;
+		this.catagoryName = catagoryName;
+	}
+	
+	public Catogory() {
+		listProduct= new ArrayList<>();
+	}
+
+	public String getCatogoryId() {
+		return catogoryId;
+	}
+	public void setCatogoryId(String catogoryId) {
+		this.catogoryId = catogoryId;
+	}
+	public String getCatagoryName() {
+		return catagoryName;
+	}
+	public void setCatagoryName(String catagoryName) {
+		this.catagoryName = catagoryName;
+	}
+	
+}

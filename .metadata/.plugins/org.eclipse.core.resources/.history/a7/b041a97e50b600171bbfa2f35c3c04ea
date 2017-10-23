@@ -1,0 +1,75 @@
+package deneme2;
+
+class Person{
+	
+	
+	private String isim;
+	private String soyisim;
+	private int yas;
+	
+	
+	public Person(String isim, String soyisim, int yas) {
+		super();
+		this.isim = isim;
+		this.soyisim = soyisim;
+		this.yas = yas;
+	}
+	public String getIsim() {
+		return isim;
+	}
+	public void setIsim(String isim) {
+		this.isim = isim;
+	}
+	public String getSoyisim() {
+		return soyisim;
+	}
+	public void setSoyisim(String soyisim) {
+		this.soyisim = soyisim;
+	}
+	public int getYas() {
+		return yas;
+	}
+	public void setYas(int yas) {
+		this.yas = yas;
+	}
+
+	/*@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Person other = (Person) obj;
+		if (isim == null) {
+			if (other.isim != null)
+				return false;
+		} else if (!isim.equals(other.isim))
+			return false;
+		if (soyisim == null) {
+			if (other.soyisim != null)
+				return false;
+		} else if (!soyisim.equals(other.soyisim))
+			return false;
+		if (yas != other.yas)
+			return false;
+		return true;
+	}*/
+
+}
+
+public class test {
+
+
+	public static void main(String[] args) {
+		
+		Person person1= new Person("kadir","sen",25);
+		Person person2 = new Person("kadir","sen",25);
+		
+		System.out.println(person1==person2);
+		System.out.println(person1.equals(person2));
+
+	}
+
+}

@@ -1,0 +1,25 @@
+
+public class Static_Inner_Class {
+
+	public static class Inner1{
+		
+		public void integerGoster(int[] dizi)
+		{
+			for (int i : dizi) 
+			{
+				System.out.println("Integer-->"+i);
+			}
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+			
+		String [] sayý= {"can","ahmet","kadir"};
+		
+		Inner1 inner1= new Inner1();
+		inner1.integerGoster(dizi);
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+
+public interface Karsılastır {
+
+	public String Karsilastir();
+
+}

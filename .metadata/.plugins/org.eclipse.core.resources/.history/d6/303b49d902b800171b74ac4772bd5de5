@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+public class StudentProses {
+
+	ArrayList<Student> studentList = new ArrayList<Student>();
+	
+	public void showStudent(Student showStudent) 
+	{
+	
+		for (Student student : studentList) {
+			System.out.println(student);
+		}
+	}
+	
+	public void addStudent(Student student) 
+	{
+	
+		studentList.add(student);
+	
+	}
+	
+	public void removeStudent(Student student) {
+		
+		studentList.remove(student);
+		
+	}
+	
+	
+}

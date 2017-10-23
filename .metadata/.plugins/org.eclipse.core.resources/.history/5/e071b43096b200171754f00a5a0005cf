@@ -1,0 +1,13 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		MetinDosyaIslemleri.dosyaAc();
+		MetinDosyaIslemleri.dosyayaYaz();
+		MetinDosyaIslemleri.dosyaKapat();
+		
+		
+	}
+
+}

@@ -1,0 +1,37 @@
+import java.io.File;
+
+public class Islemler {
+
+	private String konum;
+
+	
+	
+	public Islemler(String konum) {
+	
+		this.konum = konum;
+	}
+
+	public String getKonum() {
+		return konum;
+	}
+
+	public void setKonum(String konum) {
+		this.konum = konum;
+	}
+	public void dosyaKlasorIslemleri() {
+		File dosyaKlasor= new File(konum);
+		if(dosyaKlasor.exists())
+		{
+			System.out.println(dosyaKlasor.getName());
+		}
+		/*if(dosyaKlasor.isFile())
+		{
+			System.out.println("Belirtilen konumdaki nesne bir dosyadýr."+" Dosya ismi :"+dosyaKlasor.getName());
+		}
+		else {
+			System.out.println("Belirtilen adresteki nesne dosya deðildir");
+		}*/
+		if(dosyaKlasor.isFile())
+		System.out.println("belirtilen adresteki nesne bir dosyadýr.");
+	}
+}

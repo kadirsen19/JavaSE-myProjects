@@ -1,0 +1,22 @@
+
+public class Kara {
+
+	private double kenarUzunlugu;
+
+	public Kara(double kenarUzunlugu) {
+		
+		this.kenarUzunlugu = kenarUzunlugu;
+	}
+
+	public double getKenarUzunlugu() {
+		return kenarUzunlugu;
+	}
+
+	public void setKenarUzunlugu(double kenarUzunlugu) {
+		this.kenarUzunlugu = kenarUzunlugu;
+	}
+	public double alanHesapla() {
+		return kenarUzunlugu*kenarUzunlugu;
+	}
+	
+}

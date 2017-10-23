@@ -1,0 +1,8 @@
+
+public class Adress {
+
+	private String Il;
+	private String Ilce;
+	private Stirng Mahhalle;
+	private int No;
+}
